@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Madan
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          madanbr@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +914567645985
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#about-me">Skills</a>
+          <a class="topmenu" href="#about-me">Projects</a>
+          <a class="topmenu" href="#about-me">Recomendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages\madan.jpeg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Madan! <img src="html_finalprojimages\waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am learning  full stack developer in coursera in both application and presentation layers.
+            Am undergraduate student in Dayananda sagar university ,Banglore.
+            I'am persuing CSE in B-tech currentlly in 3rd year
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages\java.png"/>
+          <h6>Java</h6>
+          <p>.5 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages\react.png"/>
+          <h6>React</h6>
+          <p>1 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages\node.png"/>
+          <h6>Node.js</h6>
+          <p>1 years experience</p>
+        </div>  
+        <div class="skill">
+          <img src="html_finalprojimages\CSS3.png"/>
+          <h6>Css</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>AI</h3>
+            <ul>
+              <li>Developed a AI module for the website creation</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Car price analyzer</h3>
+            <ul>
+              <li>Developed and deployed a car price analyzer through the machine learning algorithms using python</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>E-commerce website</h3>
+            <ul>
+              <li> Created a styled multi-page website for a new player in the E-commerce industry and integrated it with a shopping cart,using the sripe for payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          In this role, professionals work to design and implement renewable energy systems, focusing 
+          on reducing the carbon footprint of urban and industrial areas. They combine technical 
+          expertise in solar and wind energy with innovative planning for eco-friendly infrastructure.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Cognitive systems programmers develop AI systems modeled after human cognition.
+          By integrating machine learning with neuroscience, they create intelligent 
+          systems capable of human-like problem-solving. This path is perfect for those
+          who want to push the boundaries of AI, making machines smarter and more intuitive.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          A cultural media curator is at the intersection of digital media and cultural
+          anthropology, working to create virtual museums, digital storytelling platforms,
+          and cultural content across media channels. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
